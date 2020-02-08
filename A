@@ -1,0 +1,49 @@
+//Codelab 1
+
+fun main() {
+    val nome:String = "Ahalan"
+    val sobreNome:String = "Bessa Windson"
+    println("$nome $sobreNome")
+}
+
+//Codelab 2 
+
+fun main() {
+    val numero:Int = 5;
+    val resultado:Int = quadrado(numero)
+    println("O quadrado de $numero é $resultado")
+}
+
+fun quadrado(numero: Int):Int{
+    return numero*numero
+}
+
+//Codelab 3
+
+
+fun main() {
+	val lista = listOf(2, 7, 10, 4, 3, 5)
+    lista.filter {
+	it > 6
+	}.forEach{
+        println(it)
+    }
+}
+
+//Codelab 4
+
+fun main() {
+	val lista = listOf(235, 724, 10, 45, 3, 5, 0)
+    var aux:Int = 0;
+    var aux2:Int = 0;
+    lista.forEach{
+       
+        aux = it
+        aux2 = 0
+        while(aux > 0){
+           aux2 += aux%10 
+            aux = aux/10
+        }
+        println("$aux2")
+    }
+}
